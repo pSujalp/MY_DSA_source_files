@@ -1,0 +1,1 @@
+cout<<s.print_th(3);

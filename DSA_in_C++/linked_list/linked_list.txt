@@ -1,0 +1,14 @@
+  ListNode*ans = new ListNode(-1);
+        ListNode*tail = ans;
+        while(vemp!=NULL){
+            if(m[vemp->val]==1){
+                ListNode*node = new ListNode(vemp->val); 
+                tail->next = node;
+                tail = node;
+            }
+            vemp = vemp->next;
+          
+        }
+        tail->next = NULL;
+
+        return ans->next;
